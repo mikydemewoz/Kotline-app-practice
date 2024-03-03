@@ -9,27 +9,6 @@
     android:layout_marginHorizontal="20dp">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:gravity="center_horizontal"
-        android:text="1996-2017, Amazon.com, Inc, or its affilates"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/consitions" />
-
-    <TextView
-        android:id="@+id/consitions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Conditions of Use Privacy Notice"
-        android:textColor="@color/blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="533dp" />
-
-    <TextView
         android:id="@+id/first_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -161,17 +140,21 @@
         android:layout_width="115dp"
         android:layout_height="1dp"
         android:background="@android:color/black"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="413dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxes"
+        android:layout_marginTop="35dp"/>
 
     <View
+        android:id="@+id/line2"
         android:layout_width="115dp"
         android:layout_height="1dp"
         android:layout_marginStart="5dp"
         android:background="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        tools:layout_editor_absoluteY="412dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkboxes"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@+id/textView"/>
 
     <TextView
         android:id="@+id/textView"
@@ -181,6 +164,8 @@
         android:gravity="center_horizontal"
         android:text="New to Amazon?"
         app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxes"
+        android:layout_marginTop="25dp"
         tools:layout_editor_absoluteY="403dp" />
 
     <Button
@@ -192,8 +177,32 @@
         android:text="Create a new Amazone account"
         android:textColor="@color/black"
         app:backgroundTint="@null"
-        app:layout_constraintBottom_toTopOf="@+id/consitions"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conditions of Use Privacy Notice"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="1996-2017, Amazon.com, Inc, or its affilates"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conditions"
+        android:layout_marginTop="35dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
