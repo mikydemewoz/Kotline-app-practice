@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- styles.xml -->
+<resources>
+    <style name="AppTheme.TextView" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+</resources>
